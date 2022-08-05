@@ -4,7 +4,7 @@
   import '../app.css'
 </script>
 
-<Header blogTitle={'SvelteKit x Sanity Blog'} />
+<Header blogTitle={'Jeremy Sanity and Svelte Test'} />
 
 <main class="max-w-screen-lg mx-auto">
   <slot />

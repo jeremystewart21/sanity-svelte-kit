@@ -7,7 +7,7 @@
 {#if author?.name}
   <a href="/authors/{author.slug.current}">
     <span>
-      <SanityImage image={author.image} maxWidth={40} />
+      <SanityImage image={author.image} maxWidth={100} />
     </span>
     {author.name}
   </a>

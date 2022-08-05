@@ -23,25 +23,30 @@
   })}
 </p>
 
-{#each post.authors || [] as author}
-  <AuthorCard {author} />
-{/each}
+<div class="mt-20">
+  {#if post.image}
+    <SanityImage image={post.image} />
+  {/if}
+</div>
 
+<div class="mt-20">
+  <PortableText
+    value={post.body}
+    components={{
+      types: {
+        code: Code,
+        image: ImageBlock,
+        authorReference: AuthorBlock
+      },
+      marks: {
+        link: Link
+      }
+    }}
+  />
+</div>
 
-{#if post.image}
-  <SanityImage image={post.image} />
-{/if}
-
-<PortableText
-  value={post.body}
-  components={{
-    types: {
-      code: Code,
-      image: ImageBlock,
-      authorReference: AuthorBlock
-    },
-    marks: {
-      link: Link
-    }
-  }}
-/>
+<div class="mt-20 border-t">
+  {#each post.authors || [] as author}
+    <AuthorCard {author} />
+  {/each}
+</div>

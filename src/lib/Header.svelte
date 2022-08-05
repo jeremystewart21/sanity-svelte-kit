@@ -9,11 +9,11 @@
   $: ({pathname} = $page)
 </script>
 
-<header class="max-w-screen-lg mx-auto py-8">
-  <span>{blogTitle}</span>
+<header class="max-w-screen-lg mx-auto py-8 flex justify-between">
   <nav>
     <ul>
       <li><a data-selected={pathname === '/'} href="/">home</a></li>
     </ul>
   </nav>
+  <span class="font-bold">{blogTitle}</span>
 </header>
