@@ -2,6 +2,10 @@
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
+    fontFamily: {
+      sans: '"DM Sans", sans-serif',
+      mono: '"DM Mono", monospace'
+    },
     extend: {}
   },
   plugins: []
