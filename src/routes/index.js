@@ -11,6 +11,7 @@ export async function get() {
   }`)
 
   if (data) {
+    console.log(data)
     return {
       status: 200,
       body: data
