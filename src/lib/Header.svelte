@@ -9,7 +9,7 @@
   $: ({pathname} = $page)
 </script>
 
-<header>
+<header class="max-w-screen-lg mx-auto py-8">
   <span>{blogTitle}</span>
   <nav>
     <ul>

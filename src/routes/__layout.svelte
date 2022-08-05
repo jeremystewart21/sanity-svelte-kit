@@ -6,7 +6,7 @@
 
 <Header blogTitle={'SvelteKit x Sanity Blog'} />
 
-<main>
+<main class="max-w-screen-lg mx-auto">
   <slot />
 </main>
 
