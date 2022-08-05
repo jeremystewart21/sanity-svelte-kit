@@ -5,6 +5,19 @@
 </script>
 
 <article>
+  <a class="" rel="prefetch" href="/blog/{post.slug.current}">
+    {#if post.image}
+      <div class="image">
+        <SanityImage image={post.image} maxWidth={300} />
+      </div>
+    {/if}
+    <h2 class="mt-4 font-semibold">
+      {post.title}
+    </h2>
+  </a>
+</article>
+
+<!-- <article>
   <h2>
     <a rel="prefetch" href="/blog/{post.slug.current}">{post.title}</a>
   </h2>
@@ -13,8 +26,7 @@
       <SanityImage image={post.image} maxWidth={300} />
     </div>
   {/if}
-</article>
-
+</article> -->
 <style>
   article {
     display: flex;
@@ -22,14 +34,6 @@
     flex-direction: column-reverse;
     /* Align cards */
     align-self: start;
-  }
-
-  h2 {
-    margin: 1rem 0 0;
-  }
-
-  h2 a {
-    text-decoration: none;
   }
 
   .image {

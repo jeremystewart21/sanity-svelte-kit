@@ -14,8 +14,8 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
-<p>
+<h1 class="text-4xl font-bold">{post.title}</h1>
+<p class="my-4">
   Published {new Date(post.publishedAt).toLocaleDateString('en', {
     month: 'long',
     day: '2-digit',
