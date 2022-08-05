@@ -14,7 +14,7 @@
 
 <PostsGrid {posts} />
 
-<h2 style="margin-top: 4rem">Author{authors.length > 1 ? 's' : ''}</h2>
+<h2>Author{authors.length > 1 ? 's' : ''}</h2>
 
 {#each authors as author}
   <AuthorCard {author} />
