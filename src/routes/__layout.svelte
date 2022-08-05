@@ -6,7 +6,7 @@
 
 <Header blogTitle={'Jeremy Sanity and Svelte Test'} />
 
-<main class="max-w-screen-lg mx-auto">
+<main class="">
   <slot />
 </main>
 
