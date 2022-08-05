@@ -27,7 +27,6 @@
   <AuthorCard {author} />
 {/each}
 
-<hr />
 
 {#if post.image}
   <SanityImage image={post.image} />

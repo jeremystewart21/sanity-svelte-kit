@@ -14,12 +14,8 @@
       <SanityImage image={post.image} />
     </Saos>
 
- 
-      <!-- <div class="">
-        <SanityImage image={post.image} maxWidth={300} />
-      </div> -->
     {/if}
-    <h2 class="mt-4 font-semibold">
+    <h2 class="mt-4 font-semibold text-2xl">
       {post.title}
     </h2>
   </a>
