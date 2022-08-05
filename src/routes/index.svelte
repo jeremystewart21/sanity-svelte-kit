@@ -36,7 +36,7 @@
       </Saos>
     </div>
     <div class="h-full w-1/3">
-      <Saos once={true} animation={'from-right 1s cubic-bezier(0.35, 0.5, 0.65, 0.95) 0.3s both'}>
+      <Saos once={true} animation={'from-right 1s cubic-bezier(0.35, 0.5, 0.65, 0.95) 1s both'}>
         <img
           class="h-[650px] object-cover"
           src="https://cdn.sanity.io/images/njsn8sgm/production/47444df23d32a18e030c9f1875c23697e2290a2b-5953x3969.jpg?w=751&h=630&auto=format"

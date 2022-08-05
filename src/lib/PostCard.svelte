@@ -8,11 +8,11 @@
 <article>
   <a class="" rel="prefetch" href="/blog/{post.slug.current}">
     {#if post.image}
-      <Saos animation={'slide-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}>
+      <Saos once={true} animation={'slide-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}>
         <SanityImage image={post.image} />
       </Saos>
     {/if}
-    <Saos animation={'fade-in 2s cubic-bezier(0.35, 0.5, 0.65, 0.95) 1s both'}>
+    <Saos once={true} animation={'fade-in 2s cubic-bezier(0.35, 0.5, 0.65, 0.95) 1s both'}>
       <h2 class="mt-4 font-semibold text-2xl">
         {post.title}
       </h2>
